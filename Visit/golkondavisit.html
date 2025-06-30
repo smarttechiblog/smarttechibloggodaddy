@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    `
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Golkonda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <section class="top-section">
+          <div class="title border">
+            <b>A Visit to Golkonda Fort</b>
+			 <p><small> Posted date: 2nd April 2023</small></p>
+            <p>
+              Would like to share my experience on one of the historical place
+              golkonda. Where visited with my family members(my wife and
+              daughter). The first site view of the fort seems bigger. There
+              were two gates In and Out gates for tourist. And also we need to
+              buy the tickets where the prices are around 25/- for Indian
+              Citizens and for foreigners it is 250/- around. I don't rememnber
+              the exact price. But, to guid on the history and on the way there
+              were guides and security gaurds available.
+            </p>
+            <p>
+              <mark>
+                <u><b>Highlights</b></u>
+              </mark>
+            </p>
+            <div class="top-section full_width">
+              <div class="list-content_left">
+                <a href="#EnteranceGate">
+                  <i class="fa-solid fa-landmark-dome"> Enterance gate.</i>
+                </a>
+                <a href="#Echo">
+                  <i class="fa-solid fa-landmark-dome"> The Echo.</i>
+                </a>
+                <!-- <a href="#History">
+                  <i class="fa-solid fa-landmark-dome"> The History.</i>
+                </a>
+                <a href="#RamdasPrison">
+                  <i class="fa-solid fa-landmark-dome"> Ramdas prison.</i>
+                </a>
+                <a href="#KaliMathaTemple">
+                  <i class="fa-solid fa-landmark-dome"> Kali Matha temple.</i>
+                </a>
+                <a href="#MugalDarbar">
+                  <i class="fa-solid fa-landmark-dome"> Mugal Darbar.</i>
+                </a> -->
+              </div>
+              <div class="list-content_Right">
+                <img
+                  style="height: 80%; width: 40%"
+                  class="border"
+                  height="100%"
+                  src="../assets/images/Visits/Golkonda/Photo_Visited_Golkonda.jpeg"
+                  alt="Me with my family" />
+              </div>
+            </div>
+            <p id="EnteranceGate">
+              <mark>
+                <u><b>Enterance Gate</b></u>
+              </mark>
+            </p>
+            <p>
+              Golconda fort Entry Gate also called as “FATEH DARWAZA”. This
+              Entry Gate Consists of Iron pierce with a sharp point which will
+              protects from enemies attacks the fort with Elephants then it hits
+              into its head and immediately hot oil was poured by the Knights at
+              the time of ruling of Shah’s .Exactly opposite to the Main
+              Entrance a Artillery was there to kill the enemies without
+              attacking the fort.
+              <br />
+              <img
+                style="height: 50%; width: 30%"
+                onclick="javascript:Zoom(this);"
+                class="border"
+                height="100%"
+                src="../assets/images/Visits/Golkonda/Entrance_Gate_Golkonda.jpg"
+                alt="GolKonda Entrance Gate" />
+            </p>
+            <p id="Echo">
+              <mark>
+                <u><b>The Echo</b></u>
+              </mark>
+            </p>
+            <p>
+              After Crossing the Entry Gate, there is a diamond shaped
+              architecture was there in the top of the echo system where exactly
+              in a particular point of place if any one clapped it will reflects
+              the sound and it can be heard till the top of the kings Darbar. At
+              the time of Shah’s Ruling if any person will come to the fort this
+              Echo System helps to inform to the King immediately.
+				<br/>
+              <img
+                style="height: 50%; width: 30%"
+                onclick="javascript:Zoom(this);"
+                class="border"
+                src="../assets/images/Visits/Golkonda/Golkonda_Echo.jpg"
+                alt="GolKonda Echo" />
+            </p>
+            <!-- <p id="History">
+              <mark>
+                <u><b>The History</b></u>
+              </mark>
+            </p>
+            <p>This is History.. content</p>
+            <p id="RamdasPrison">
+              <mark>
+                <u><b>Ramdas prison</b></u>
+              </mark>
+            </p>
+            <p>This is Ramdas.. content</p>
+            <p id="KaliMathaTemple">
+              <mark>
+                <u><b>Kali Matha temple</b></u>
+              </mark>
+            </p>
+            <p>This is Kali Matha Temple.. content</p>
+            <p id="MugalDarbar">
+              <mark>
+                <u><b>Mugal Darbar</b></u>
+              </mark>
+            </p>
+            <p>This is Mugal Darbar. content</p> -->
+          </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" width="100%" height="100%" />
+            <div id="caption"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      function Zoom(args) {
+        debugger;
+        // var modalImg = document.getElementById(args.id);
+        modal.style.display = "block";
+        modalImg.src = args.src;
+        captionText.innerHTML = args.alt;
+      }
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      var captionText = document.getElementById("caption");
+      var modalImg = document.getElementById("img01");
+      // // Get the image and insert it inside the modal - use its "alt" text as a caption
+      // var img = document.getElementById("myImg");
+      // var modalImg = document.getElementById("img01");
+      // var captionText = document.getElementById("caption");
+      // img.onclick = function () {
+      //   modal.style.display = "block";
+      //   modalImg.src = this.src;
+      //   captionText.innerHTML = this.alt;
+      // };
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // disable right click
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+
+      document.onkeydown = function (e) {
+        // disable F12 key
+        if (e.keyCode == 123) {
+          return false;
+        }
+
+        // disable I key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          return false;
+        }
+
+        // disable J key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+          return false;
+        }
+
+        // disable U key
+        if (e.ctrlKey && e.keyCode == 85) {
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>
